@@ -1,21 +1,24 @@
 /* -------------------------
-   Minimal Dark Tech Theme
+   Soft Dark / Lightened Theme
 -------------------------- */
 :root {
-    --primary: #00ffc0;      /* Soft neon cyan highlight */
-    --secondary: #6f42c1;    /* Soft purple accent */
-    --bg: #111;              /* Pure dark background */
-    --card: #1a1a1a;         /* Slightly lighter dark */
-    --text: #e6e6e6;         /* Soft white text */
-    --muted: #9d9d9d;        /* Muted gray */
-    --border: #2a2a2a;       /* Minimal border lines */
+    --primary: #00e6b0;      /* Soft cyan highlight */
+    --secondary: #8c5bff;    /* Light purple accent */
+    
+    /* Lightened dark tones */
+    --bg: #1f1f23;           /* Main background (not pure black) */
+    --card: #2a2a31;         /* Soft grey card */
+    --panel: #26262c;        /* Panel surface */
+    
+    --text: #f0f0f0;         /* Soft bright text */
+    --muted: #c0c0c0;        /* Brighter muted grey */
+    --border: #3a3a42;       /* Soft border */
+    
     --font: 'Inter', 'Segoe UI', sans-serif;
     --transition: 0.25s ease;
 }
 
-/* -------------------------
-   Reset
--------------------------- */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -45,6 +48,7 @@ body {
 header {
     padding: 35px 0;
     text-align: center;
+    background: var(--panel);
     border-bottom: 1px solid var(--border);
 }
 
@@ -52,13 +56,11 @@ header h1 {
     font-size: 2.4rem;
     color: var(--primary);
     font-weight: 700;
-    letter-spacing: 1px;
 }
 
 header p {
     margin-top: 8px;
     color: var(--muted);
-    font-size: 0.95rem;
 }
 
 /* Navigation */
@@ -120,6 +122,7 @@ nav a:hover {
 -------------------------- */
 section {
     padding: 60px 0;
+    background: var(--bg);
 }
 
 section h2 {
@@ -133,10 +136,6 @@ section h2 {
 /* -------------------------
    Skills
 -------------------------- */
-.skills-section {
-    background: var(--bg);
-}
-
 .skill-list {
     display: flex;
     flex-wrap: wrap;
@@ -160,24 +159,23 @@ section h2 {
 
 .skill-item {
     padding: 12px 15px;
-    background: #222;
+    background: var(--panel);
     border-radius: 6px;
     margin-bottom: 12px;
     color: var(--text);
-    font-size: 0.95rem;
     border-left: 3px solid var(--primary);
     transition: var(--transition);
 }
 
 .skill-item:hover {
-    background: #2b2b2b;
+    background: #32323a;
 }
 
 /* -------------------------
    Projects
 -------------------------- */
 .projects-section {
-    background: #151515;
+    background: #232329;
 }
 
 .project-card {
@@ -192,20 +190,17 @@ section h2 {
 .project-card h3 {
     font-size: 1.6rem;
     color: var(--primary);
-    margin-bottom: 10px;
 }
 
 .project-card p {
     margin-bottom: 12px;
-    color: var(--text);
 }
 
 .methodology {
-    margin-top: 15px;
+    margin-top: 10px;
     padding-left: 12px;
     border-left: 3px solid var(--secondary);
     color: var(--muted);
-    font-size: 0.95rem;
 }
 
 /* Project Buttons */
@@ -216,7 +211,6 @@ section h2 {
     border-radius: 6px;
     margin-right: 10px;
     color: var(--primary);
-    font-size: 0.9rem;
     transition: var(--transition);
 }
 
@@ -229,7 +223,7 @@ section h2 {
    Contact
 -------------------------- */
 .contact-section {
-    background: var(--card);
+    background: var(--panel);
     border-top: 1px solid var(--border);
     text-align: center;
     padding: 50px 20px;
@@ -258,35 +252,16 @@ section h2 {
 -------------------------- */
 footer {
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 0;
     color: var(--muted);
+    background: var(--panel);
     border-top: 1px solid var(--border);
-    font-size: 0.85rem;
 }
 
 /* -------------------------
    Responsive
 -------------------------- */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    nav a {
-        margin: 0 6px;
-        font-size: 0.85rem;
-    }
-
-    .hero {
-        padding: 40px 15px;
-    }
-
-    .skill-group {
-        width: 100%;
-    }
-
-    .project-card {
-        padding: 20px;
-        width: 100%;
-    }
+    .skill-group { width: 100%; }
+    .project-card { width: 100%; }
 }
