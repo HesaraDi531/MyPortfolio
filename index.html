@@ -1,120 +1,784 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hesara Dilnath | PHP Web Developer & Data Analyst</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hesara Dilnath | Software Developer | Data Science & AI</title>
+  <meta name="description" content="Portfolio of Hesara Dilnath, a software developer and data science student focused on web development, data analytics, machine learning and artificial intelligence.">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-            <header>
-            <div class="container">
-                <h1>Hesara Dilnath</h1>
-                <p><span class="role">PHP Web Developer | Data Science Student (NSBM/Plymouth)</span></p>
-                <nav>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </nav>
+
+  <!-- Mouse Light Ambient Glow -->
+  <div class="mouse-glow" id="mouseGlow"></div>
+
+  <!-- Custom Pointer Glow -->
+  <div class="custom-cursor" id="customCursor"></div>
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="nav-container">
+      <a href="#home" class="logo">HESARA<span class="dot">.</span></a>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-item active">Home</a></li>
+        <li><a href="#about" class="nav-item">About</a></li>
+        <li><a href="#expertise" class="nav-item">Expertise</a></li>
+        <li><a href="#skills" class="nav-item">Skills</a></li>
+        <li><a href="#projects" class="nav-item">Projects</a></li>
+        <li><a href="#certifications" class="nav-item">Certifications</a></li>
+        <li><a href="#journey" class="nav-item">Journey</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary nav-btn">Hire Me</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 01 HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        
+        <!-- Left Hero Content -->
+        <div class="hero-content fade-in">
+          <div class="status-badge">
+            <span class="pulse-dot"></span> OPEN TO OPPORTUNITIES
+          </div>
+          
+          <p class="hero-greeting">HELLO, I'M</p>
+          <h1 class="hero-name">Hesara Dilnath</h1>
+          
+          <div class="hero-title-wrapper">
+            <span class="static-prefix">Specialized in </span>
+            <span class="dynamic-type" id="typewriter"></span>
+            <span class="cursor-blink">|</span>
+          </div>
+
+          <p class="hero-description">
+            I build practical web applications, intelligent software systems and data-driven solutions using modern development, analytics, machine learning and AI technologies.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-primary">HIRE ME <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="assets/Hesara_Dilnath_CV.pdf" download class="btn btn-glass">DOWNLOAD CV <i class="fa-solid fa-arrow-down"></i></a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/HesaraDi531" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/hesara-dilnath-10a925304/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:hesaradilnath531@gmail.com" class="social-icon" aria-label="Send Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-num">05+</span>
+              <span class="stat-label">Featured Projects</span>
             </div>
-        </header>
-
-    <section id="about" class="hero">
-        <div class="container">
-            <img src="123.png" alt="Professional Photo" class="profile-pic">
-            <h2>Dedicated PHP Developer & Data Enthusiast</h2>
-            <p>
-  I am a <strong>Full-Stack Web Developer</strong> specializing in the <strong>PHP ecosystem</strong>—including Laravel, CodeIgniter, and Vanilla PHP—with strong expertise in <strong>MySQL database management</strong>. Leveraging my background in <strong>Data Science</strong>, I build robust, secure, and data-driven web applications focused on efficient back-end logic and dynamic content generation.
-</p>
-
+            <div class="stat-card">
+              <span class="stat-num">AI + ML</span>
+              <span class="stat-label">Technical Focus</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">DATA</span>
+              <span class="stat-label">Analytics & Insights</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">WEB</span>
+              <span class="stat-label">Full-Stack Systems</span>
+            </div>
+          </div>
         </div>
+
+        <!-- Right Hero Portrait / Visual -->
+        <div class="hero-visual fade-in">
+          <div class="portrait-wrapper">
+            <div class="tech-ring outer-ring"></div>
+            <div class="tech-ring inner-ring"></div>
+            <div class="ambient-glow"></div>
+            <!-- Standard dynamic fallback portrait asset URL -->
+            <img src="123.png" alt="Hesara Dilnath" class="portrait-img" onerror="this.src=''">
+            <div class="hud-overlay">
+              <span class="hud-tag top-left">&lt;SYS_READY&gt;</span>
+              <span class="hud-tag bottom-right">AI_CORE // ACTIVE</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
 
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <h2>Core Skills & Technologies</h2>
-            <div class="skill-list">
-                <div class="skill-group">
-                    <h3>Web Development Stack (PHP)</h3>
-                    <div class="skill-item"><i class="fab fa-html5"></i> <span>HTML5 / CSS3 (Bootstrap, Sass)</span></div>
-                    <div class="skill-item"><i class="fab fa-php"></i> <span>**PHP** (Vanilla & Laravel/CI Basics)</span></div>
-                    <div class="skill-item"><i class="fas fa-database"></i> <span>MySQL / SQL Query Optimization</span></div>
-                </div>
-
-                <div class="skill-group">
-                    <h3>Data Analysis & ML</h3>
-                    <div class="skill-item"><i class="fab fa-python"></i> <span>Python (Pandas, Scikit-learn)</span></div>
-                    <div class="skill-item"><i class="fas fa-chart-line"></i> <span>R Programming (Data Manipulation)</span></div>
-                    <div class="skill-item"><i class="fas fa-brain"></i> <span>Machine Learning Concepts</span></div>
-                </div>
-
-                <div class="skill-group">
-                    <h3>Front-End & Tools</h3>
-                    <div class="skill-item"><i class="fab fa-js"></i> <span>JavaScript (AJAX, DOM Manipulation)</span></div>
-                    <div class="skill-item"><i class="fas fa-server"></i> <span>XAMPP / LAMP Stack Management</span></div>
-                    <div class="skill-item"><i class="fab fa-git-alt"></i> <span>Git / GitHub & Version Control</span></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects-section">
-    <div class="container">
-        <h2>Featured Projects</h2>
-        
-        <div class="project-card">
-            <h3>Point of Sales System</h3>
-            <p><strong>Focus:</strong> Building a secure, multi-user web application with CRUD functionality for managing sales and inventory.</p>
-            <p class="methodology">Methodology: Developed using <strong>PHP</strong> for server-side logic, <strong>HTML/CSS/JavaScript</strong> for front-end interaction, and <strong>MySQL</strong> for database management. Implemented secure session handling and real-time stock updates.</p>
-            <div class="project-links">
-                <a href="https://github.com/HesaraDi531/Point-of-Sales-System" target="_blank"><i class="fab fa-github"></i> GitHub Repo</a>
-            </div>
+    <!-- 02 ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">01</span>
+          <h2 class="section-title">ABOUT <span class="highlight">ME</span></h2>
         </div>
 
-        <div class="project-card">
-            <h3>Utility Management System</h3>
-            <p><strong>Focus:</strong> Delivering a polished and fully responsive front-end interface for the Utility Management System, highlighting advanced layout structuring and user-centered design.</p> 
-            <p class="methodology">Methodology: Engineered using <strong>Semantic HTML5</strong> and modular <strong>CSS</strong> architecture with Flexbox/Grid. Achieved responsive behavior, scalable UI components, and clean accessibility patterns—all without external frameworks.</p>
-            <div class="project-links">
-                <a href="https://github.com/HesaraDi531/Utility-Management-System" target="_blank"><i class="fab fa-github"></i> GitHub Repo</a>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <h3>Online Clothing Store Website</h3>
-            <p><strong>Focus:</strong> Showcasing advanced front-end development skills with a responsive and user-friendly e-commerce interface.</p>
-            <p class="methodology">Methodology: Crafted the entire front-end using <strong>Semantic HTML5</strong> and modern <strong>CSS</strong> techniques including Flexbox and Grid, ensuring full responsiveness without relying on heavy frameworks.</p>
-            <div class="project-links">
-                <a href="https://github.com/HesaraDi531/Online-Clothing-store-website" target="_blank"><i class="fab fa-github"></i> GitHub Repo</a>
-            </div>
-        </div>
-
-        
-        
+        <div class="about-grid">
+  <div class="about-text-panel glass-panel">
+    <p class="lead-text">
+      I’m a software developer and data science student focused on building practical digital solutions that bring together software development, data analytics, machine learning, and artificial intelligence.
+    </p>
+    <p class="body-text">
+      My experience spans full-stack web development, database-driven applications, data analysis, machine learning, and AI-powered systems. I’ve worked on projects ranging from responsive e-commerce and business applications to large-scale retail analytics, customer segmentation, recommendation systems, and an NLP-based library management chatbot.
+    </p>
+    <p class="body-text">
+      I enjoy turning real-world problems into practical, data-driven applications — from cleaning and analyzing large datasets to developing intelligent features and integrating them into usable software. My current interests are centered around Python, PHP, SQL, Flask, Pandas, Scikit-Learn, machine learning, NLP, and AI, while continuing to strengthen my skills in software engineering and data science.
+    </p>
+    
+    <div class="about-pillars">
+      <div class="pillar-tag"><i class="fa-solid fa-code"></i> Software Engineering</div>
+      <div class="pillar-tag"><i class="fa-solid fa-chart-line"></i> Data Science</div>
+      <div class="pillar-tag"><i class="fa-solid fa-brain"></i> Machine Learning</div>
+      <div class="pillar-tag"><i class="fa-solid fa-robot"></i> Artificial Intelligence</div>
     </div>
-</section>
+  </div>
 
-
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Let's Connect</h2>
-            <p>I am seeking roles focused on PHP/Full-Stack Web Development where data analysis skills are a plus. Reach out to discuss!</p>
-            <div class="social-links">
-                <a href="mailto:hesaradilnath531@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-                <a href="https://www.linkedin.com/in/hesara-dilnath-10a925304/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/HesaraDi531" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            </div>
-        </div>
+  <div class="journey-flow-panel glass-panel">
+    <h3 class="panel-subtitle">TECHNICAL DIRECTION</h3>
+    <div class="tech-pipeline">
+      <div class="pipeline-node">
+        <span class="node-icon"><i class="fa-solid fa-laptop-code"></i></span>
+        <span class="node-title">WEB</span>
+        <span class="node-desc">Full-Stack Core & APIs</span>
+      </div>
+      <div class="pipeline-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+      <div class="pipeline-node">
+        <span class="node-icon"><i class="fa-solid fa-database"></i></span>
+        <span class="node-title">DATA</span>
+        <span class="node-desc">Analytics & Mining</span>
+      </div>
+      <div class="pipeline-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+      <div class="pipeline-node">
+        <span class="node-icon"><i class="fa-solid fa-network-wired"></i></span>
+        <span class="node-title">ML</span>
+        <span class="node-desc">Predictive Models</span>
+      </div>
+      <div class="pipeline-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+      <div class="pipeline-node highlight-node">
+        <span class="node-icon"><i class="fa-solid fa-microchip"></i></span>
+        <span class="node-title">AI</span>
+        <span class="node-desc">NLP & Intelligent Apps</span>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; <span id="current-year"></span> Hesara Dilnath. PHP Web Dev & Data Portfolio. </p>
+    <!-- 03 EXPERTISE SECTION -->
+    <section id="expertise" class="section alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">02</span>
+          <h2 class="section-title">CORE <span class="highlight">EXPERTISE</span></h2>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <div class="expertise-grid">
+          
+          <div class="expertise-card glass-panel">
+            <span class="exp-index">01</span>
+            <div class="exp-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>SOFTWARE DEVELOPMENT</h3>
+            <p>Building responsive, modular, and database-driven applications with robust backend architectures.</p>
+            <div class="exp-tags">
+              <span>PHP</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>C#</span><span>Flask</span>
+            </div>
+          </div>
+
+          <div class="expertise-card glass-panel">
+            <span class="exp-index">02</span>
+            <div class="exp-icon"><i class="fa-solid fa-chart-pie"></i></div>
+            <h3>DATA ANALYTICS</h3>
+            <p>Turning raw unstructured datasets into strategic business insights using statistical modeling and wrangling.</p>
+            <div class="exp-tags">
+              <span>Python</span><span>Pandas</span><span>NumPy</span><span>R</span><span>Matplotlib</span><span>Seaborn</span><span>ggplot2</span>
+            </div>
+          </div>
+
+          <div class="expertise-card glass-panel">
+            <span class="exp-index">03</span>
+            <div class="exp-icon"><i class="fa-solid fa-diagram-project"></i></div>
+            <h3>MACHINE LEARNING</h3>
+            <p>Building practical machine learning solutions and predictive models for user behavior and segmentation.</p>
+            <div class="exp-tags">
+              <span>Scikit-Learn</span><span>K-Means</span><span>Regression</span><span>Recommenders</span><span>RFM Analysis</span>
+            </div>
+          </div>
+
+          <div class="expertise-card glass-panel">
+            <span class="exp-index">04</span>
+            <div class="exp-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>ARTIFICIAL INTELLIGENCE</h3>
+            <p>Deploying natural language processing, vector similarity search, and AI-powered workflow automation.</p>
+            <div class="exp-tags">
+              <span>NLP</span><span>TF-IDF</span><span>Sentence Transformers</span><span>Vector Search</span><span>Prompt Engineering</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 SKILLS SECTION -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">03</span>
+          <h2 class="section-title">TECHNICAL <span class="highlight">CAPABILITIES</span></h2>
+        </div>
+
+        <div class="skills-categories-grid">
+          
+          <div class="skill-cat-card glass-panel">
+            <div class="cat-header"><i class="fa-solid fa-terminal"></i> PROGRAMMING</div>
+            <div class="skill-chips">
+              <span class="chip">Python</span>
+              <span class="chip">PHP</span>
+              <span class="chip">R</span>
+              <span class="chip">C#</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-cat-card glass-panel">
+            <div class="cat-header"><i class="fa-solid fa-globe"></i> WEB DEVELOPMENT</div>
+            <div class="skill-chips">
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3</span>
+              <span class="chip">PHP</span>
+              <span class="chip">Flask</span>
+              <span class="chip">Responsive Web Design</span>
+              <span class="chip">Web Interface Design</span>
+              <span class="chip">AJAX</span>
+            </div>
+          </div>
+
+          <div class="skill-cat-card glass-panel">
+            <div class="cat-header"><i class="fa-solid fa-chart-simple"></i> DATA SCIENCE</div>
+            <div class="skill-chips">
+              <span class="chip">Pandas</span>
+              <span class="chip">NumPy</span>
+              <span class="chip">Data Analysis</span>
+              <span class="chip">Data Visualization</span>
+              <span class="chip">Statistical Modeling</span>
+              <span class="chip">Data Interpretation</span>
+              <span class="chip">Big Data Analytics</span>
+            </div>
+          </div>
+
+          <div class="skill-cat-card glass-panel">
+            <div class="cat-header"><i class="fa-solid fa-gears"></i> MACHINE LEARNING</div>
+            <div class="skill-chips">
+              <span class="chip">Scikit-Learn</span>
+              <span class="chip">K-Means Clustering</span>
+              <span class="chip">Recommender Systems</span>
+              <span class="chip">RFM Segmentation</span>
+              <span class="chip">Feature Engineering</span>
+            </div>
+          </div>
+
+          <div class="skill-cat-card glass-panel">
+            <div class="cat-header"><i class="fa-solid fa-robot"></i> AI / NLP</div>
+            <div class="skill-chips">
+              <span class="chip">Artificial Intelligence</span>
+              <span class="chip">Natural Language Processing</span>
+              <span class="chip">TF-IDF</span>
+              <span class="chip">Sentence Transformers</span>
+              <span class="chip">AI Literacy</span>
+              <span class="chip">Generative AI</span>
+              <span class="chip">Prompt Engineering</span>
+              <span class="chip">Responsible AI</span>
+              <span class="chip">Microsoft Copilot</span>
+            </div>
+          </div>
+
+          <div class="skill-cat-card glass-panel">
+            <div class="cat-header"><i class="fa-solid fa-database"></i> DATABASES</div>
+            <div class="skill-chips">
+              <span class="chip">MySQL</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Database Administration</span>
+              <span class="chip">Database Management</span>
+              <span class="chip">Data Systems</span>
+              <span class="chip">Neo4j</span>
+            </div>
+          </div>
+
+          <div class="skill-cat-card glass-panel full-width">
+            <div class="cat-header"><i class="fa-solid fa-wrench"></i> TOOLS & ENVIRONMENTS</div>
+            <div class="skill-chips">
+              <span class="chip">Git</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">VS Code</span>
+              <span class="chip">WAMP</span>
+              <span class="chip">XAMPP</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 PROJECTS SECTION -->
+    <section id="projects" class="section alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">04</span>
+          <h2 class="section-title">SELECTED <span class="highlight">PROJECTS</span></h2>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="project-filters" id="projectFilters">
+          <button class="filter-btn active" data-filter="all">ALL</button>
+          <button class="filter-btn" data-filter="ai-ml">AI / ML</button>
+          <button class="filter-btn" data-filter="data">DATA</button>
+          <button class="filter-btn" data-filter="web">WEB</button>
+          <button class="filter-btn" data-filter="software">SOFTWARE</button>
+        </div>
+
+        <div class="projects-list">
+
+          <!-- PROJECT 01 -->
+          <article class="project-panel glass-panel" data-category="data ai-ml">
+            <div class="project-content">
+              <div class="project-header">
+                <span class="project-num">01</span>
+                <span class="project-date">Aug 2026</span>
+                <span class="category-badge">DATA ANALYTICS / MACHINE LEARNING</span>
+              </div>
+              <h3 class="project-title">Online Retail Performance Analysis & Customer Segmentation</h3>
+              <p class="project-desc">
+                Developed an end-to-end retail analytics pipeline using Python to analyze customer purchasing behavior, sales performance, and business trends from 500K+ transaction records.
+              </p>
+              
+              <ul class="feature-list">
+                <li>Cleaned and transformed 500K+ transaction records for metric computation</li>
+                <li>Calculated revenue, order volume, active customer count, and AOV</li>
+                <li>Built RFM customer segmentation model and applied K-Means clustering</li>
+                <li>Classified customer base into VIP, Loyal, Regular, and Inactive cohorts</li>
+              </ul>
+
+              <div class="tech-stack">
+                <span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span><span>Scikit-Learn</span><span>Machine Learning</span><span>Data Analytics</span>
+              </div>
+            </div>
+
+            <div class="project-visual">
+              <div class="dashboard-mockup">
+                <div class="mockup-header">
+                  <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+                  <span class="mockup-title">analytics_dashboard.py</span>
+                </div>
+                <div class="mockup-body">
+                  <div class="metrics-row">
+                    <div class="m-card"><span class="m-title">TRANSACTIONS</span><span class="m-val">500K+</span></div>
+                    <div class="m-card"><span class="m-title">CLUSTERS</span><span class="m-val">4 Cohorts</span></div>
+                  </div>
+                  <div class="chart-sim">
+                    <div class="bar" style="height: 80%;"><span>VIP</span></div>
+                    <div class="bar" style="height: 60%;"><span>Loyal</span></div>
+                    <div class="bar" style="height: 45%;"><span>Regular</span></div>
+                    <div class="bar" style="height: 25%;"><span>Inactive</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02 -->
+          <article class="project-panel glass-panel reverse" data-category="data">
+            <div class="project-content">
+              <div class="project-header">
+                <span class="project-num">02</span>
+                <span class="project-date">Jun 2026 – Jul 2026</span>
+                <span class="category-badge">DATA ANALYTICS</span>
+              </div>
+              <h3 class="project-title">Retail Store Data Analytics Using R Programming</h3>
+              <p class="project-desc">
+                Performed comprehensive retail data analysis using R to investigate sales performance, profit trends, customer behavior, regional margins, and product category profitability.
+              </p>
+              
+              <ul class="feature-list">
+                <li>End-to-end data wrangling and exploratory data analysis using tidyverse</li>
+                <li>Quantified discount impact on net profitability across regional hubs</li>
+                <li>Generated high-resolution statistical graphics for business stakeholders</li>
+              </ul>
+
+              <div class="tech-stack">
+                <span>R</span><span>dplyr</span><span>tidyr</span><span>ggplot2</span><span>Data Analysis</span><span>Data Visualization</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/HesaraDi531/RetailStoreAnalytics" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-glass">
+                  <i class="fa-brands fa-github"></i> View Repository
+                </a>
+              </div>
+            </div>
+
+            <div class="project-visual">
+              <div class="dashboard-mockup">
+                <div class="mockup-header">
+                  <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+                  <span class="mockup-title">R_Studio_Analysis.R</span>
+                </div>
+                <div class="mockup-body">
+                  <div class="code-preview">
+                    <code>library(dplyr)</code>
+                    <code>library(ggplot2)</code>
+                    <code># Retail Margin EDA</code>
+                    <code>df %>% group_by(Region) %>%</code>
+                    <code>  summarise(Profit = sum(Margin))</code>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03 -->
+          <article class="project-panel glass-panel" data-category="ai-ml software">
+            <div class="project-content">
+              <div class="project-header">
+                <span class="project-num">03</span>
+                <span class="project-date">Mar 2026</span>
+                <span class="category-badge">ARTIFICIAL INTELLIGENCE / NLP</span>
+              </div>
+              <h3 class="project-title">AI Library Management Chatbot</h3>
+              <p class="project-desc">
+                Engineered an AI-powered library management chatbot that allows users to query library databases, search books, and manage transactions via natural language.
+              </p>
+              
+              <ul class="feature-list">
+                <li>NLP intent classification using TF-IDF and Logistic Regression</li>
+                <li>Semantic book search integration using Sentence Transformers</li>
+                <li>Flask REST API coupled with MySQL backend for session & loan tracking</li>
+              </ul>
+
+              <div class="tech-stack">
+                <span>Python</span><span>Flask</span><span>NLP</span><span>Sentence Transformers</span><span>Scikit-Learn</span><span>MySQL</span><span>REST API</span>
+              </div>
+            </div>
+
+            <div class="project-visual">
+              <div class="dashboard-mockup">
+                <div class="mockup-header">
+                  <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+                  <span class="mockup-title">ai_bot_interface.v1</span>
+                </div>
+                <div class="mockup-body chat-mock">
+                  <div class="chat-msg user">"Find machine learning books on algorithms"</div>
+                  <div class="chat-msg bot">"Matching vector similarity... Found 3 relevant titles."</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 04 -->
+          <article class="project-panel glass-panel reverse" data-category="ai-ml software">
+            <div class="project-content">
+              <div class="project-header">
+                <span class="project-num">04</span>
+                <span class="project-date">Dec 2025 – Mar 2026</span>
+                <span class="category-badge">MACHINE LEARNING</span>
+              </div>
+              <h3 class="project-title">Book Recommendation System Using Machine Learning</h3>
+              <p class="project-desc">
+                Developed a machine learning-based recommendation engine built with Python, Pandas, and Scikit-Learn to serve personalized reading recommendations based on historical rating patterns.
+              </p>
+              
+              <ul class="feature-list">
+                <li>Extensive data preprocessing and matrix factorization algorithm setup</li>
+                <li>Personalized item-based recommendation logic deployment</li>
+                <li>Flask web application interface delivering real-time recommendations</li>
+              </ul>
+
+              <div class="tech-stack">
+                <span>Python</span><span>Pandas</span><span>Scikit-Learn</span><span>Flask</span><span>Machine Learning</span>
+              </div>
+            </div>
+
+            <div class="project-visual">
+              <div class="dashboard-mockup">
+                <div class="mockup-header">
+                  <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+                  <span class="mockup-title">recommender_engine.py</span>
+                </div>
+                <div class="mockup-body">
+                  <div class="rec-grid">
+                    <div class="rec-card"><i class="fa-solid fa-book"></i> Rec #1 (Score: 0.94)</div>
+                    <div class="rec-card"><i class="fa-solid fa-book"></i> Rec #2 (Score: 0.89)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 05 -->
+          <article class="project-panel glass-panel" data-category="web software">
+            <div class="project-content">
+              <div class="project-header">
+                <span class="project-num">05</span>
+                <span class="project-date">Recent</span>
+                <span class="category-badge">FULL-STACK WEB DEVELOPMENT</span>
+              </div>
+              <h3 class="project-title">E-Commerce Clothing Store Website</h3>
+              <p class="project-desc">
+                Designed and developed a fully responsive e-commerce web platform integrating a relational MySQL database for dynamic catalog browsing and management.
+              </p>
+              
+              <ul class="feature-list">
+                <li>Dynamic product catalog filtering and search interface</li>
+                <li>Backend catalog & inventory management architecture in PHP</li>
+                <li>Relational database integration for secure user session handling</li>
+              </ul>
+
+              <div class="tech-stack">
+                <span>HTML5</span><span>CSS3</span><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Responsive Web Design</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/HesaraDi531/Online-Clothing-store-website" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-glass">
+                  <i class="fa-brands fa-github"></i> View Repository
+                </a>
+              </div>
+            </div>
+
+            <div class="project-visual">
+              <div class="dashboard-mockup">
+                <div class="mockup-header">
+                  <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+                  <span class="mockup-title">ecommerce_portal.php</span>
+                </div>
+                <div class="mockup-body store-mock">
+                  <div class="store-item"></div>
+                  <div class="store-item"></div>
+                  <div class="store-item"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ADDITIONAL EXISTING PROJECTS -->
+          <article class="project-panel glass-panel reverse" data-category="software web">
+            <div class="project-content">
+              <div class="project-header">
+                <span class="project-num">06</span>
+                <span class="project-date">System</span>
+                <span class="category-badge">SOFTWARE DEVELOPMENT</span>
+              </div>
+              <h3 class="project-title">Point of Sales & Utility Management Systems</h3>
+              <p class="project-desc">
+                Built modular desktop and database application management tools for tracking transaction records, inventory updates, and operational workflows.
+              </p>
+
+              <div class="tech-stack">
+                <span>C#</span><span>PHP</span><span>SQL Server</span><span>MySQL</span>
+              </div>
+            </div>
+
+            <div class="project-visual">
+              <div class="dashboard-mockup">
+                <div class="mockup-header">
+                  <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+                  <span class="mockup-title">pos_system.exe</span>
+                </div>
+                <div class="mockup-body">
+                  <div class="code-preview">
+                    <code>SQL_SERVER // CONNECTED</code>
+                    <code>TRANSACTION_DB // SYNCED</code>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 CERTIFICATIONS SECTION -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">05</span>
+          <h2 class="section-title">PROFESSIONAL <span class="highlight">CERTIFICATIONS</span></h2>
+        </div>
+
+        <div class="certifications-grid">
+          
+          <div class="cert-card glass-panel">
+            <div class="cert-badge"><i class="fa-brands fa-microsoft"></i></div>
+            <div class="cert-details">
+              <span class="cert-issuer">Microsoft & LinkedIn</span>
+              <h3>Career Essentials in Generative AI</h3>
+              <span class="cert-date">Issued August 2026</span>
+              
+              <div class="cert-skills">
+                <span>AI for Business</span><span>Microsoft Copilot</span><span>Generative AI</span><span>Responsible AI</span><span>Prompt Engineering</span>
+              </div>
+
+              <a href="https://www.linkedin.com/learning/certificates/a343a1a6f4a0dc86d9142ba57dba70e28f59cee332dc5083266fe3bf3aa3090b/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-glass">
+                View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="cert-card glass-panel">
+            <div class="cert-badge"><i class="fa-brands fa-linkedin"></i></div>
+            <div class="cert-details">
+              <span class="cert-issuer">LinkedIn</span>
+              <h3>Your Top AI Questions Answered: AI Literacy for Everyone</h3>
+              <span class="cert-date">Issued August 2026</span>
+              
+              <div class="cert-skills">
+                <span>Artificial Intelligence</span><span>AI Literacy</span>
+              </div>
+
+              <a href="https://www.linkedin.com/learning/certificates/c91dbdeb678b40fc96dfe3d490d7232e44b74289a8a6fef8aadc15551da18b3f/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-glass">
+                View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 EDUCATION / JOURNEY SECTION -->
+    <section id="journey" class="section alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">06</span>
+          <h2 class="section-title">ACADEMIC <span class="highlight">JOURNEY</span></h2>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+
+          <div class="timeline-item glass-panel">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-meta">HIGHER EDUCATION</span>
+              <h3>BSc (Hons) Data Science</h3>
+              <p class="institution">University of Plymouth / NSBM Green University</p>
+              <p class="timeline-desc">
+                Specializing in quantitative data analysis, machine learning algorithms, database administration, and software architecture.
+              </p>
+              <div class="timeline-tags">
+                <span>Data Science</span><span>Statistical Modeling</span><span>Data Visualization</span><span>Machine Learning</span><span>Big Data Analytics</span><span>Data Interpretation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 DATA TO INTELLIGENCE VISUAL SECTION -->
+    <section class="section visual-break-section">
+      <div class="container">
+        <div class="data-flow-box glass-panel text-center">
+          <span class="sub-label">ARCHITECTURAL PIPELINE</span>
+          <h2 class="flow-title">FROM DATA TO <span class="highlight">INTELLIGENCE</span></h2>
+          
+          <div class="nodes-container">
+            <div class="node-box">
+              <i class="fa-solid fa-database"></i>
+              <span>RAW DATA</span>
+            </div>
+            <div class="node-connector"><i class="fa-solid fa-angle-right"></i></div>
+            <div class="node-box">
+              <i class="fa-solid fa-filter"></i>
+              <span>DATA CLEANING</span>
+            </div>
+            <div class="node-connector"><i class="fa-solid fa-angle-right"></i></div>
+            <div class="node-box">
+              <i class="fa-solid fa-chart-line"></i>
+              <span>ANALYSIS</span>
+            </div>
+            <div class="node-connector"><i class="fa-solid fa-angle-right"></i></div>
+            <div class="node-box">
+              <i class="fa-solid fa-diagram-project"></i>
+              <span>MACHINE LEARNING</span>
+            </div>
+            <div class="node-connector"><i class="fa-solid fa-angle-right"></i></div>
+            <div class="node-box highlight-node-box">
+              <i class="fa-solid fa-robot"></i>
+              <span>AI APPLICATION</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 09 CONTACT SECTION -->
+    <section id="contact" class="section">
+      <div class="container text-center">
+        <div class="contact-card glass-panel">
+          <span class="section-num">07</span>
+          <h2 class="cta-heading">LET'S BUILD SOMETHING <span class="highlight">INTELLIGENT.</span></h2>
+          <p class="cta-desc">
+            Interested in software development, data analytics, AI or machine learning? Let's connect.
+          </p>
+
+          <div class="cta-button-group">
+            <a href="mailto:hesaradilnath531@gmail.com" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-envelope"></i> EMAIL ME
+            </a>
+            <a href="https://www.linkedin.com/in/hesara-dilnath-10a925304/" target="_blank" rel="noopener noreferrer" class="btn btn-glass btn-lg">
+              <i class="fa-brands fa-linkedin-in"></i> LINKEDIN
+            </a>
+            <a href="https://github.com/HesaraDi531" target="_blank" rel="noopener noreferrer" class="btn btn-glass btn-lg">
+              <i class="fa-brands fa-github"></i> GITHUB
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 10 FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#home" class="logo">HESARA<span class="dot">.</span></a>
+        <p>Software Developer | Data Science Student</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/HesaraDi531" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/hesara-dilnath-10a925304/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:hesaradilnath531@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+
+      <div class="footer-copy">
+        &copy; <span id="year">2026</span> Hesara Dilnath. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
 </body>
 </html>
